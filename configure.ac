@@ -34,6 +34,7 @@ ISSM_OPTIONS
 
 #List all Makefiles
 AC_CONFIG_FILES([
+	ISSM.pc
 	Makefile
 	src/Makefile
 	src/c/Makefile

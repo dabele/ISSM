@@ -3,6 +3,10 @@ SUBDIRS = src
 
 ACLOCAL_AMFLAGS = -I m4
 
-configdir = $(includedir)
-nobase_config_HEADERS = \
+issmconfigdir = $(includedir)
+issmconfig_HEADERS = \
 	./config.h 
+
+issmpcdir = $(libdir)/pkgconfig
+issmpc_DATA = \
+	./ISSM.pc
