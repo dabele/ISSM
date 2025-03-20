@@ -180,6 +180,17 @@ AC_DEFUN([ISSM_OPTIONS],[
 	ISSMEXT=".exe"
 	AC_SUBST([ISSMEXT])
 	dnl }}}
+	dnl Install Headers {{{
+	AC_MSG_CHECKING(for installing headers)
+	AC_ARG_ENABLE(
+		[install-headers],
+		AS_HELP_STRING([--enable-install-headers], [install headers and auiliary files to use ISSM as a library]),
+		[INSTALL_HEADERS_VALUE=${enableval}],
+		[INSTALL_HEADERS_VALUE=no]
+	)
+	AM_CONDITIONAL([INSTALL_HEADERS], [test "x${INSTALL_HEADERS_VALUE}" == "xyes"])
+	AC_MSG_RESULT([$INSTALL_HEADERS_VALUE])
+	dnl }}}
 
 	dnl OS{{{
 	IS_MAC=no

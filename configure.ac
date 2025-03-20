@@ -34,7 +34,6 @@ ISSM_OPTIONS
 
 #List all Makefiles
 AC_CONFIG_FILES([
-	ISSM.pc
 	Makefile
 	src/Makefile
 	src/c/Makefile
@@ -43,6 +42,13 @@ AC_CONFIG_FILES([
 	src/wrappers/matlab/Makefile
 	src/wrappers/javascript/Makefile
 	src/m/Makefile
+])
+
+# pkg-config file
+AM_COND_IF([INSTALL_HEADERS], [
+	AC_CONFIG_FILES([
+		ISSM.pc
+	])
 ])
 
 #End of configure.ac
