@@ -25,6 +25,7 @@ jobs:
         --disable-static \
         --enable-development \
         --enable-debugging \
+        --enable-install-headers \
         --with-numthreads=4 \
         --with-python-version=3.12 \
         --with-python-dir=$PYTHON_ROOT \
