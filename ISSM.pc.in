@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ISSM
+Description: The Ice-Sheet and Sea-level System Model (ISSM)
+Version: @VERSION@
+Url: @PACKAGE_URL@
+Libs: -L${libdir} -lISSMCore -lISSMModules -lISSMOverload
+Cflags: -I${includedir} -DHAVE_CONFIG_H

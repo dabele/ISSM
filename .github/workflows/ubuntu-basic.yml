@@ -22,6 +22,7 @@ jobs:
         --disable-static \
         --enable-development \
         --enable-debugging \
+        --enable-install-headers \
         --with-numthreads=4 \
         --with-matlab-dir=$MATLAB_ROOT \
         --with-fortran-lib="-L/usr/lib/x86_64-linux-gnu -lgfortran" \

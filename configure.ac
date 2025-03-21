@@ -44,5 +44,12 @@ AC_CONFIG_FILES([
 	src/m/Makefile
 ])
 
+# pkg-config file
+AM_COND_IF([INSTALL_HEADERS], [
+	AC_CONFIG_FILES([
+		ISSM.pc
+	])
+])
+
 #End of configure.ac
 AC_OUTPUT

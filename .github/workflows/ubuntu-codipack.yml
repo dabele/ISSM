@@ -22,6 +22,7 @@ jobs:
         --enable-tape-alloc \
         --enable-development \
         --enable-debugging \
+        --enable-install-headers \
         --with-numthreads=4 \
         --without-kriging \
         --without-kml \
